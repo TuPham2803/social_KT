@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" utf-8"/>
+        <title>Social Networking</title>
+        <link rel="stylesheet" type="text/css" href ="css/market.css"/>
+        <link rel="stylesheet" type="text/css" href ="css/header_slider.css"/>
+        <link rel="stylesheet" type="text/css" href ="css/nofication.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/themify-icons-font/themify-icons/themify-icons.css">
+        <link rel="shortcut icon" type="image/x-icon" href="image/story/logo.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css"/>
+    </head>
+    <body >
+        <!-- header -->
+        <header id="header">
+            <div class="logo-page-container">
+                <div class="flex logos">
+                    <img src="image/story/logo2.jpg" rel="avt"/>
+                    <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
+                </div>
+                <div class="flex">
+                    <input type="text" name=""id=""placeholder="Search"/>
+                    <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <nav>
+                    <ul class="menu flex pc">
+                        <li class="tab-item">
+                            <a href="home.html"> <i class="fa-solid fa-house-user"></i></a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="messenge.html"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="market.html"><i class="fa-solid fa-calendar-week"></i></a>
+                        </li>
+                        <li>
+                            <a class="js-bell" href="#" onclick="showNofi('home')"><i class="fa-solid fa-bell"></i></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="menu flex mobile-tablet">
+                        <li>
+                            <a  href="#"> <i class="fa-regular fa-square-plus"></i></a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- slider -->
+        <div id="slider">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="image/slider/img (1).jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (2).jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (3).jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="image/slider/img (4).jpg" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (5).jpg" style="width:100%">
+                    <div class="text">Caption Five</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 'left')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'right')">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>     
+        <!-- market -->
+        <div id="market">
+            <div class="btn-market">
+                <label for="nav_bar" class="nav_bars-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox"  class="nav_input" id="nav_bar">
+                <label for="nav_bar" class="nav_overlay"></label>
+                <label for="nav_bar" id="menu-option" class="mobile">
+                    <i class="icon-close fa-solid fa-xmark"></i>
+                    <div class="search-title">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>BỘ LỌC TÌM KIẾM</span>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Theo Danh Mục</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="dm1" name="danhmuc" value="on">
+                                <label for="dm1">Phụ kiện nữ (1.7k)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dm2" name="danhmuc" value="on">
+                                <label for="dm2">Loa (1.6k+)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dm3" name="danhmuc" value="on">
+                                <label for="dm3">Máy tính (1.8k+)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dm4" name="danhmuc" value="on">
+                                <label for="dm4">Sức khỏe (2k+)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dm5" name="danhmuc" value="on">
+                                <label for="dm5">Khác (10k+)</label>
+                            </li>
+                        </ul>
+                        <div class="timkiem">
+                            <label for="dmkhac">Khác:</label>
+                            <input type="text" id="dmkhac" placeholder="Danh mục cần tìm">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Nơi bán</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="nb1" name="noiban" value="on">
+                                <label for="nb1">TPHCM</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nb2" name="noiban" value="on">
+                                <label for="nb2">Đà Nẵng</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nb3" name="noiban" value="on">
+                                <label for="nb3">Thái Bình</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nb4" name="noiban" value="on">
+                                <label for="nb4">Quảng Ninh</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nb5" name="noiban" value="on">
+                                <label for="nb5">Nam Định</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="nb6" name="noiban" value="on">
+                                <label for="nb6">Nước ngoài</label>
+                            </li>
+                        </ul>
+                        <div class="timkiem">
+                            <label for="nbkhac">Khác:</label>
+                            <input type="text" id="nbkhac" placeholder="khu vực cần tìm">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Vận Chuyển</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="vc1" name="vanchuyen" value="on">
+                                <label for="vc1">Nhanh</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="vc2" name="vanchuyen" value="on">
+                                <label for="vc2">Hỏa Tốc</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="vc3" name="vanchuyen" value="on">
+                                <label for="vc3">Tiết kiệm</label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="khoanggia">
+                        <div class="title">
+                            <span>Khoảng Giá</span>
+                        </div>
+                        <div class="tu-den">
+                            <input type="text" placeholder="₫ Từ">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                            <input type="text" placeholder="₫ Đến">
+                        </div>
+    
+                        <button>Áp dụng</button>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Tình trạng</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="tt1" name="tinhtrang" value="on">
+                                <label for="tt1">Đã sử dụng</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="tt2" name="tinhtrang" value="on">
+                                <label for="tt2">Mới</label>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Đánh giá</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="star">
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="star">
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <span>Trở lên</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="star">
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <span>Trở lên</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="star">
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <span>Trở lên</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="star">
+                                    <a href="#"><i class="fa-solid fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                                    <span>Trở lên</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="filter">
+                        <div class="title">
+                            <span>Dịch vụ & Khuyến mãi</span>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="dvkm1" name="dichvuvakhuyenmai" value="on">
+                                <label for="dvkm1">Freeship</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dvkm2" name="dichvuvakhuyenmai" value="on">
+                                <label for="dvkm2">Đang giảm giá</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dvkm3" name="dichvuvakhuyenmai" value="on">
+                                <label for="dvkm3">Gì cũng rẻ</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dvkm4" name="dichvuvakhuyenmai" value="on">
+                                <label for="dvkm4">Hàng có sẵn</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="dvkm5" name="dichvuvakhuyenmai" value="on">
+                                <label for="dvkm5">Mua giá bán buôn/ bán sỉ</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clean-all">
+                        <Button onclick="UnCheckAll()">Xóa tất cả</Button>
+                    </div>
+                </label>
+            </div>
+            <!--Nav PC-->
+            <div id="menu-option">
+                <div class="search-title">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>BỘ LỌC TÌM KIẾM</span>
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Theo Danh Mục</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pcdm1" name="danhmuc" value="on">
+                            <label for="pcdm1">Phụ kiện nữ (1.7k)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdm2" name="danhmuc" value="on">
+                            <label for="pcdm2">Loa (1.6k+)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdm3" name="danhmuc" value="on">
+                            <label for="pcdm3">Máy tính (1.8k+)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdm4" name="danhmuc" value="on">
+                            <label for="pcdm4">Sức khỏe (2k+)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdm5" name="danhmuc" value="on">
+                            <label for="pcdm5">Khác (10k+)</label>
+                        </li>
+                    </ul>
+                    <div class="timkiem">
+                        <label for="pcdmkhac">Khác:</label>
+                        <input type="text" id="pcdmkhac" placeholder="Danh mục cần tìm" value="">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Nơi bán</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pcnb1" name="noiban" value="on">
+                            <label for="pcnb1">TPHCM</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcnb2" name="noiban" value="on">
+                            <label for="pcnb2">Đà Nẵng</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcnb3" name="noiban" value="on">
+                            <label for="pcnb3">Thái Bình</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcnb4" name="noiban" value="on">
+                            <label for="pcnb4">Quảng Ninh</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcnb5" name="noiban" value="on">
+                            <label for="pcnb5">Nam Định</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcnb6" name="noiban" value="on">
+                            <label for="pcnb6">Nước ngoài</label>
+                        </li>
+                    </ul>
+                    <div class="timkiem">
+                        <label for="pcnbkhac">Khác:</label>
+                        <input type="text" id="pcnbkhac" placeholder="khu vực cần tìm" value="">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Vận Chuyển</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pcvc1" name="vanchuyen" value="on">
+                            <label for="pcvc1">Nhanh</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcvc2" name="vanchuyen" value="on">
+                            <label for="pcvc2">Hỏa Tốc</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcvc3" name="vanchuyen" value="on">
+                            <label for="pcvc3">Tiết kiệm</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="khoanggia">
+                    <div class="title">
+                        <span>Khoảng Giá</span>
+                    </div>
+                    <div class="tu-den">
+                        <input type="text" placeholder="₫ Từ" value="">
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <input type="text" placeholder="₫ Đến" value="">
+                    </div>
+
+                    <button>Áp dụng</button>
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Tình trạng</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pctt1" name="tinhtrang" value="on">
+                            <label for="pctt1">Đã sử dụng</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pctt2" name="tinhtrang" value="on">
+                            <label for="pctt2">Mới</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Đánh giá</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="star">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <span>Trở lên</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <span>Trở lên</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <span>Trở lên</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="star">
+                                <a href="#"><i class="fa-solid fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <a href="#"><i class="fa-regular fa-star"></i></a>
+                                <span>Trở lên</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filter">
+                    <div class="title">
+                        <span>Dịch vụ & Khuyến mãi</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="pcdvkm1" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm1">Freeship</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdvkm2" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm2">Đang giảm giá</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdvkm3" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm3">Gì cũng rẻ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdvkm4" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm4">Hàng có sẵn</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="pcdvkm5" name="dichvuvakhuyenmai" value="on">
+                            <label for="pcdvkm5">Mua giá bán buôn/ bán sỉ</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clean-all">
+                    <Button onclick="UnCheckAll()">Xóa tất cả</Button>
+                </div>
+                
+
+                
+            </div>
+            <div id="wp-products">
+                
+                <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+
+                <div id="luachon1" class="animation">
+                    <ul id="list-products">
+                        <div class="item">
+                            <div class="image c4-izmir c4-border-vert c4-gradient-top c4-image-zoom-in"style="--primary-color: #4D516C; --secondary-color: #73799F;">
+                                <img  src="image/product.jpg" alt="Sample Image" />
+                                <figcaption class="c4-layout-center-center">
+                                   <p>BEST-SALE</p> 
+                                </figcaption>
+                               
+                            </div>
+                            
+                            
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        
+
+                        
+
+                        </div>
+
+                        <div class="item">
+                            <div class="image c4-izmir c4-border-left c4-gradient-top-right c4-image-pan-right" style="--primary-color: #4ca2cd; --secondary-color: #65af6f;">
+                                <img src="image/product.jpg" alt="">
+                                <figcaption class="c4-layout-top-left">
+                                    <p>HOT TREND</p>
+                                </figcaption>
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="image c4-izmir c4-border-corners-1 c4-image-zoom-out c4-gradient-bottom"    style="--primary-color: #E0EAFC; --secondary-color: #CFDEF3; --text-color: #1f467b; --border-color: #1f467b; --image-opacity: .1;">
+                                <img src="image/product.jpg" alt="">
+                                <figcaption class="c4-layout-top-left">
+                                    <p>BEST-SALE</p>
+                                </figcaption>
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Túi sách</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+        
+                    </ul>
+                </div>
+
+                <div id="luachon2" class="animation">
+                    <ul id="list-products">
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt=""/>
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product2.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">Son MAC</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+        
+                    </ul>
+                </div>
+
+                <div id="luachon3" class="animation">
+                    <ul id="list-products">
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+                        
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image">
+                                <img src="image/product3.jpg" alt="">
+                            </div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+        
+                            <div class="name">ÁO THUN</div>
+                            <div class="desc">Xuất sứ: Italy</div>
+                            <div class="price">500.000 VNĐ</div>
+                        </div>
+        
+                    </ul>
+                </div>
+
+
+                <div id="list-page">
+                    <ul class="tab flex ">
+                        <li class="item active" onclick="market('luachon1',this)">1</li>
+                        <li class="item" onclick="market('luachon2',this)">2</li>
+                        <li class="item" onclick="market('luachon3',this)">3</li>
+                    </ul>
+                </div>
+
+               
+
+
+            </div> 
+        </div>
+        <!-- nofication -->
+        <div id="nofication">
+            <div class="nofi-container">
+                <div class="flex title space">
+                    <div>
+                        <i class="fa-solid fa-bell icon-nofi"></i>
+                        <h1>NOFICATION</h1>
+                    </div>
+                    <div></div>
+                    <i class="fa-solid fa-xmark close" onclick="hideNofi()"></i>
+                </div>
+                <div class="flex buttons" >
+                    <input type="button" value="ALL"/>
+                    <input type="button" value="UNREAD"/>
+                </div>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                            <div class="image">
+                                <img src="image/story/avt1.jpg"/>
+                            </div>
+                            <div></div>
+                            <div class="name">
+                                <p>_Khả Tú_28032003</p>
+                            </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-6w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt2.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Bảo Bùi_31032003</p>
+                        </div>
+                        <div class="noidung">
+                            <p >who you might now</p>
+                            <p class="thoigian">-7w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt3.jpg"/>
+                        </div>
+                        <div class="name">
+                            <p>_Như Nguyễn_897</p>
+                        </div>
+                        <div class="noidung">
+                            <p >liked your reel</p>
+                            <p class="thoigian">-9w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt4.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Thành Nguyễn_123</p>
+                        </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-2w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt1.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Khả Tú_28032003</p>
+                        </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-6w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+                
+                
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>

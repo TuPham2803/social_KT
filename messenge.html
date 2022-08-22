@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=" utf-8"/>
+        <title>Social Networking</title>
+        <link rel="stylesheet" type="text/css" href ="css/messenge.css"/>
+        <link rel="stylesheet" type="text/css" href ="css/header_slider.css"/>
+        <link rel="stylesheet" type="text/css" href ="css/nofication.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/themify-icons-font/themify-icons/themify-icons.css">
+        <link rel="shortcut icon" type="image/x-icon" href="image/story/logo.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        
+    </head>
+    <body >
+        <!-- header -->
+        <header id="header">
+            <div class="logo-page-container">
+                <div class="flex logos">
+                    <img src="image/story/logo2.jpg" rel="avt"/>
+                    <a href=""class="logo animate__animated animate__bounce animate__infinite">KT_Social</a>
+                </div>
+                <div class="flex">
+                    <input type="text" name=""id=""placeholder="Search"/>
+                    <a href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <nav>
+                    <ul class="menu flex pc">
+                        <li class="tab-item">
+                            <a href="home.html"> <i class="fa-solid fa-house-user"></i></a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="messenge.html"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </li>
+                        <li class="tab-item">
+                            <a href="market.html"><i class="fa-solid fa-calendar-week"></i></a>
+                        </li>
+                        <li>
+                            <a class="js-bell" href="#" onclick="showNofi('home')"><i class="fa-solid fa-bell"></i></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="menu flex mobile-tablet">
+                        <li>
+                            <a  href="#"> <i class="fa-regular fa-square-plus"></i></a>
+                        </li>
+                        <li>
+                            <a  href="#"><i class="icon fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- slider -->
+        <div id="slider">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="image/slider/img (1).jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (2).jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (3).jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="image/slider/img (4).jpg" style="width:100%">
+                    <div class="text">Caption Four</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider/img (5).jpg" style="width:100%">
+                    <div class="text">Caption Five</div>
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1, 'left')">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 'right')">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>    
+
+        <!-- messenge -->
+        <div id="messenge">  
+            <!-- mess_er -->
+            <div class="mess_er">
+                <!-- contact -->
+                <div class="contact flex space">
+                    <div></div>
+                    <p>Khả Tú</p>
+                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                </div>
+                <!-- infos -->
+                <div class="infos">
+                    <section class="gd info" onclick="giaodien('nen2',this)">
+                        <div class="image">
+                            <img src="image/story/avt1.jpg" alt="avt">
+                            <div class="active"></div>
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Khả Tú</p>
+                            <p>Active Now</p>
+                        </div>
+                        
+                    </section>
+                    <section class="gd info" onclick="giaodien('nen3',this)">
+                        <div class="image">
+                            <img src="image/story/avt2.jpg" alt="avt">
+                            <div class="active"></div>
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Bảo Bùi</p>
+                            <p>Active Now</p>
+                        </div>
+                        
+                    </section>
+                    <section class="gd info" onclick="giaodien('nen4',this)">
+                        <div class="image">
+                            <img src="image/story/avt3.jpg" alt="avt">
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Như Lê</p>
+                            <p>Online 1h ago</p>
+                        </div>
+                        
+                    </section>
+                    <section class="gd info" onclick="giaodien('nen5',this)">
+                        <div class="image">
+                            <img src="image/story/avt4.jpg" alt="avt">
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Nam Hải</p>
+                            <p>Online 30min ago</p>
+                        </div>
+                        
+                    </section>
+                    <section class="gd info" onclick="giaodien('nen6',this)">
+                        <div class="image">
+                            <img src="image/story/avt5.jpg" alt="avt">
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Linh Trần</p>
+                            <p>Online 45min ago</p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="gd info" onclick="giaodien('nen3',this)">
+                        <div class="image">
+                            <img src="image/story/avt2.jpg" alt="avt">
+                            <div class="active"></div>
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Bảo Bùi</p>
+                            <p>Active Now</p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="gd info" onclick="giaodien('nen5',this)">
+                        <div class="image">
+                            <img src="image/story/avt4.jpg" alt="avt">
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Nam Hải</p>
+                            <p>Online 30min ago</p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="gd info" onclick="giaodien('nen2',this)">
+                        <div class="image">
+                            <img src="image/story/avt1.jpg" alt="avt">
+                            <div class="active"></div>
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Khả Tú</p>
+                            <p>Active Now</p>
+                        </div>
+                        
+                    </section>
+
+                    <section class="gd info" onclick="giaodien('nen6',this)">
+                        <div class="image">
+                            <img src="image/story/avt5.jpg" alt="avt">
+                        </div>
+                        
+                        
+                        <div class="name">
+                            <p>Linh Trần</p>
+                            <p>Online 45min ago</p>
+                        </div>
+                        
+                    </section>
+
+
+
+
+                    
+                </div>
+            </div>
+
+            <!-- box chat -->
+            <div id="nen1" class="box_chat">
+                <div class="icon">
+                    <i class="fa-regular fa-paper-plane"></i>
+                </div>
+                <div class="intruction">
+                    <p>Your Messages</p>
+                    <p>Send private photos and messages to a friend or group.</p>
+                </div>
+                <button>Send Message</button>
+            </div>
+
+            <div id="nen2" class="khungtinnhan">
+                <div class="info flex">
+                    <div class="flex">
+                        <i class="fa-solid fa-caret-left back" onclick="back()"></i>
+                        <div>
+                            <h1>Khả Tú</h1>
+                            <p>Active Now</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="icon-mess flex">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                </div>
+                <div></div>
+                <div class="text-box flex">
+                        <a href="#"><i class="fa-regular fa-face-laugh"></i></a>
+                        <input class="input"type="text" name=""id=""placeholder="Send"/>
+                        <a href="#"><i class="fa-regular fa-image"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div id="nen3" class="khungtinnhan">
+                <div class="info flex">
+                    <div class="flex">
+                        <i class="fa-solid fa-caret-left back" onclick="back()"></i>
+                        <div>
+                            <h1>Bảo Bùi</h1>
+                            <p>Active Now</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="icon-mess flex">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                </div>
+                <div></div>
+                <div class="text-box flex">
+                        <a href="#"><i class="fa-regular fa-face-laugh"></i></a>
+                        <input class="input"type="text" name=""id=""placeholder="Send"/>
+                        <a href="#"><i class="fa-regular fa-image"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+            
+            <div id="nen4" class="khungtinnhan">
+                <div class="info flex">
+                    <div class="flex">
+                        <i class="fa-solid fa-caret-left back" onclick="back()"></i>
+                        <div>
+                            <h1>Như Lê</h1>
+                            <p>online 1h ago</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="icon-mess flex">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                </div>
+                <div></div>
+                <div class="text-box flex">
+                        <a href="#"><i class="fa-regular fa-face-laugh"></i></a>
+                        <input class="input"type="text" name=""id=""placeholder="Send"/>
+                        <a href="#"><i class="fa-regular fa-image"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div id="nen5" class="khungtinnhan">
+                <div class="info flex">
+                    <div class="flex">
+                        <i class="fa-solid fa-caret-left back" onclick="back()"></i>
+                        <div>
+                            <h1>Nam Hải</h1>
+                            <p>online 30min ago</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="icon-mess flex">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                </div>
+                <div></div>
+                <div class="text-box flex">
+                        <a href="#"><i class="fa-regular fa-face-laugh"></i></a>
+                        <input class="input"type="text" name=""id=""placeholder="Send"/>
+                        <a href="#"><i class="fa-regular fa-image"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+
+            <div id="nen6" class="khungtinnhan">
+                <div class="info flex">
+                    <div class="flex">
+                        <i class="fa-solid fa-caret-left back" onclick="back()"></i>
+                        <div>
+                            <h1>Linh Trần</h1>
+                            <p>online 45min ago</p>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="icon-mess flex">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-exclamation"></i>
+                    </div>
+                </div>
+                <div></div>
+                <div class="text-box flex">
+                        <a href="#"><i class="fa-regular fa-face-laugh"></i></a>
+                        <input class="input"type="text" name=""id=""placeholder="Send"/>
+                        <a href="#"><i class="fa-regular fa-image"></i></a>
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <!-- nofication -->
+        <div id="nofication">
+            <div class="nofi-container">
+                <div class="flex title space">
+                    <div>
+                        <i class="fa-solid fa-bell icon-nofi"></i>
+                        <h1>NOFICATION</h1>
+                    </div>
+                    <div></div>
+                    <i class="fa-solid fa-xmark close" onclick="hideNofi()"></i>
+                </div>
+                <div class="flex buttons" >
+                    <input type="button" value="ALL"/>
+                    <input type="button" value="UNREAD"/>
+                </div>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                            <div class="image">
+                                <img src="image/story/avt1.jpg"/>
+                            </div>
+                            <div></div>
+                            <div class="name">
+                                <p>_Khả Tú_28032003</p>
+                            </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-6w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt2.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Bảo Bùi_31032003</p>
+                        </div>
+                        <div class="noidung">
+                            <p >who you might now</p>
+                            <p class="thoigian">-7w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt3.jpg"/>
+                        </div>
+                        <div class="name">
+                            <p>_Như Nguyễn_897</p>
+                        </div>
+                        <div class="noidung">
+                            <p >liked your reel</p>
+                            <p class="thoigian">-9w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt4.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Thành Nguyễn_123</p>
+                        </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-2w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+
+                <section class="profiles flex">
+                    <div class="flex">
+                        <div class="image">
+                            <img src="image/story/avt1.jpg"/>
+                        </div>
+                        <div></div>
+                        <div class="name">
+                            <p>_Khả Tú_28032003</p>
+                        </div>
+                        <div class="noidung">
+                            <p >started following you</p>
+                            <p class="thoigian">-6w-</p>
+                        </div>
+                    </div>
+                    <div class="follow">
+                        <input type="button" value="Follow"/>
+                    </div>
+                </section>
+                
+                
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        
+        <script src="script.js"></script>
+        
+    </body>
+</html>

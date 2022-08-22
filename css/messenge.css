@@ -1,0 +1,166 @@
+#header .menu.pc li:nth-child(2) a{
+    background-color: #9E663B;
+}
+#messenge{
+    box-sizing: border-box;
+    margin: 20px 15%;
+    height: 500px;
+    display: flex;
+}
+
+#messenge .mess_er{
+    width: 40%;
+    border: 1px solid black;
+    background-color: #AB9383;
+}
+
+#messenge .contact {
+    color: black;
+    border-bottom: 3px solid black;
+    padding: 5px;
+}
+#messenge .infos{
+    padding:5px;
+    overflow-y: scroll;
+    height: 450px;
+
+}
+#messenge .info{
+    
+    /* border-bottom: gray solid 1px; */
+    cursor: pointer;
+    display: flex;
+}
+#messenge .image{
+    margin: auto 0;
+    width: 20%;
+    position: relative;
+}
+#messenge .info img{
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    
+}
+#messenge .active{
+    width: 20%;
+    height: 20%;
+    background-color: green;
+    position: absolute;
+    border-radius: 50% ;
+    right: 10%;
+    bottom: 10%;
+    border: 1px solid black;
+}
+#messenge .name{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+#messenge .box_chat{
+    color: #000;
+    width: 60%;
+    padding: 20% 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+}
+#messenge .back{
+    margin: 0px 3px;
+    font-size: 50px;
+    align-items: center;
+    
+    display: none;
+    
+}
+#messenge .icon i{
+    border-radius: 50%;
+    border: 2px black solid;
+    font-size: 50px;
+    padding: 15px;
+}
+#messenge .intruction{
+    margin: 10px 0px;
+
+}
+
+.khungtinnhan .info{
+    color: black;
+    background-color: #daa48e;
+}
+#nen2{
+    display: none;
+}
+.infos .active2{
+    background-color: #FFC4C4;
+
+}
+
+.khungtinnhan{
+    color: #000;
+    width: 60%;
+    box-sizing: border-box;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    position: relative;
+    display: none;
+}
+.khungtinnhan .info{
+    justify-content: space-between;
+}
+.icon-mess i{
+    margin: 10px;
+}
+.khungtinnhan .text-box{
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    margin: 10px 10px;
+}
+.khungtinnhan .text-box input{
+    width: 80%;
+}
+.khungtinnhan .text-box a{
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 1024px){
+    #slider {
+        display: none;
+    }
+    #messenge{
+        margin: 0;
+        margin-top: 75px;
+        height: auto;
+    }
+    #messenge .mess_er{
+        width: 100%;
+    }
+    #messenge .infos{
+        overflow-y: visible;
+        height: auto;
+    }
+    #messenge .box_chat{
+        display: none;
+    }
+    #messenge .khungtinnhan{
+        border-left: 1px solid black;
+        width: 100%;
+    }
+    #messenge .back{
+        display: flex;
+    }
+    #messenge .khungtinnhan .text-box{
+        position: fixed;
+        bottom: 40px;
+    }
+    #messenge .khungtinnhan .text-box input{
+        width: 75%;
+    }
+}

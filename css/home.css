@@ -1,0 +1,249 @@
+
+#header .menu.pc li:nth-child(1) a{
+    background-color: #9E663B;
+}
+
+#home{
+    display: flex;
+    margin: 0 15%;
+}
+
+#news{
+    width:60%;
+}
+#news .story{
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    margin-top: 20px;
+    background-color:#AB9383;
+    border-radius: 10px;
+    
+
+}
+#news .story .info{
+    min-width: calc(100%/6);
+    max-width: calc(100%/6);
+    text-align: center;
+    margin: 3px 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#news div.info > img{
+    width:100%;
+    
+}
+#news .img-responsive{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+}
+#news .story .name{
+    color: #546A5A;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#news .stt{
+    background-color: #EDE0DC;
+    padding: 10px 30px;
+    margin: 20px;
+    border-radius: 3%;
+    color: #546A5A;
+}
+
+#news .stt .info{
+    
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgba(#C9CCD5,#93B5C6,#E4D8DC,0.7);
+    padding: 10px;
+    border-radius: 30px;
+}
+#news .stt .image-name{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+    
+}
+#news .stt .image-name > img{
+    width: 15%;
+}
+#news .stt .image-name div p{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+#news .stt .mucluc-1 i{
+    color: black;
+    font-size: 2rem;
+    padding: 10px;
+}
+#news .stt .image > img{
+    width: 100%;
+}
+#news .stt .icons {
+    border: black;
+}
+#news .stt .icons i{
+    padding: 10px;
+    font-size: 20px;
+}
+#news .stt .icon-right{
+    float: right;
+   
+}
+#news .stt .input{
+    border-radius: 10px;
+    color: black;
+    padding:5px;
+    margin-top: 5px;
+    width: 80%;
+    border: #000;
+}
+
+#member{
+    width: 40%;
+    
+}
+.profiles .image{
+    width: 25%;
+    margin-left: 10px;
+    margin: auto 0;
+}
+.profiles img{
+    width: 100%;
+    border-radius: 50%;
+   
+}
+.profiles p{
+    color: black;
+   
+}
+.profiles{
+    margin: 10px 25px;
+    /* background-image: linear-gradient(to bottom right, #FFE7BF, #ECB390); */
+    background-color: #AB9383;
+    border-radius: 10px;
+}
+.profiles .name{
+    margin: auto 0;
+    padding-left: 5px;
+}
+#member .setting{
+    padding: 20px;
+}
+#member .followers .suggestion{
+    justify-content: space-between;
+    padding:0px 50px;
+}
+#member .followers .suggestion p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(142,142,142);
+    font-weight: 600;
+}
+#member .followers .infos{
+    margin: 0px 50px;
+}
+#member .followers .info{
+    margin: 10px 0;
+}
+#member .followers .info .image{
+    width: 15%;
+}
+#member .followers img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+#member .followers .name{
+    color: #000;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding-left: 10px;
+}
+#member .followers .follow{
+    color: #0095F6;
+    align-items: center;
+}
+#member .followers .soluongfollow{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(142,142,142);
+    font-weight: 400;
+}
+#member .footer{
+    padding: 20px 50px;
+}
+#member .footer .lien-he{
+    display: flex;
+    flex-direction: column;
+}
+#member .footer .lien-he > ul{
+    display: flex;
+    flex-direction: row;   
+}
+#member .footer .lien-he > ul a,#member .ban-quyen{
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(199, 199, 199);
+}
+#member .footer .lien-he > ul a::after{
+    content: " | ";
+    margin: 0 2px 0 2px;    
+}
+#member .footer .lien-he .first::before{
+    content: " | ";
+    margin: 0 2px 0 2px;
+}
+
+
+
+
+
+
+/*Tablet-moblile: width < 1024px*/
+@media screen and (max-width: 1024px) 
+{
+    #home{
+        margin: 0;
+    }
+    
+    #member{
+        display: none;
+    }
+    #news{
+        width:100%;
+    }
+    #news .story{
+        overflow-x: scroll;
+    }
+    #news .story .prev,
+    #news .story .next{
+        display: none;
+    }
+    #news .stt{
+        margin: 10px 0;
+    }
+    #news .stt .input{
+        width: 75%;
+    }
+    #news .stt .image-name{
+        font-size: 15px;
+        
+    }
+    #news .stt .image-name > img{
+        width: 20%;
+    }
+    
+    
+
+    
+}
