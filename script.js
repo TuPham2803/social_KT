@@ -71,14 +71,11 @@ function showSlides(n) {
 let storyIndex = 0;
 function showStory(direction) {
     let stories = document.getElementsByClassName("myStory");
-    console.log(stories.length)
-    if (storyIndex < 0){
-        storyIndex = 0;
+    
+    if (storyIndex == 0 && direction=='left'|| storyIndex== stories.length-1 && direction=='right'){
+        
         return;
-    }
-    if (storyIndex == stories.length){
-        storyIndex = stories.length -1 ;
-        return;
+  
     }
     if(direction == 'right'){
         storyIndex++;
@@ -184,15 +181,15 @@ function showNofi(curr_page)
         head.classList.add("animate__animated");
         head.classList.add("animate__slideOutUp");
     }
-    else{
-        document.getElementById('slider').style.display= 'block';
+    else{/** trên mobile */
+        document.getElementById('slider').style.display= 'block';/** hiện slider khi đang ở trang mess lúc bấm thông báo*/
         
         let tabs = document.querySelectorAll('.tab-item > a');
         for(let tab of tabs){
-            tab.style.backgroundColor = '#fff';
+            tab.style.backgroundColor = '#fff';/** đổi màu 3 cái icon menu khi chọn thông báo */
         }
         document.querySelector('.js-bell').style.backgroundColor = "#9E663B";
-        document.getElementById(curr_page).style.display='none';
+        document.getElementById(curr_page).style.display='none';/**ẩn trang hiện tại */
     }
     nofication.classList.add('open');
 

@@ -8,7 +8,6 @@
         <link rel="stylesheet" type="text/css" href ="css/nofication.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&family=Edu+VIC+WA+NT+Beginner:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/themify-icons-font/themify-icons/themify-icons.css">
         <link rel="shortcut icon" type="image/x-icon" href="image/story/logo.ico"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -106,8 +105,10 @@
                 </label>
                 <input type="checkbox"  class="nav_input" id="nav_bar">
                 <label for="nav_bar" class="nav_overlay"></label>
-                <label for="nav_bar" id="menu-option" class="mobile">
-                    <i class="icon-close fa-solid fa-xmark"></i>
+                <div id="menu-option" class="mobile">
+                    <label for="nav_bar">
+                        <i class="icon-close fa-solid fa-xmark"></i>
+                    </label>
                     <div class="search-title">
                         <i class="fa-solid fa-basket-shopping"></i>
                         <span>BỘ LỌC TÌM KIẾM</span>
@@ -320,7 +321,7 @@
                     <div class="clean-all">
                         <Button onclick="UnCheckAll()">Xóa tất cả</Button>
                     </div>
-                </label>
+                </div>
             </div>
             <!--Nav PC-->
             <div id="menu-option">
