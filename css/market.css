@@ -229,7 +229,7 @@
     #list-products .item
     { 
         width: 45%;
-        height: 300px;
+        height: 350px;
     }
     
     .nav_overlay{
@@ -260,6 +260,7 @@
         line-height: 28px;
         color:black;
         background-color: #BAA89B;
+        z-index: 100;
     }
     #menu-option.mobile{
         display: block;
@@ -271,6 +272,7 @@
         overflow-y: scroll;
         top: 85px;
         bottom: 40px;
+        z-index: 100;
 
     } 
     #menu-option.mobile .icon-close{

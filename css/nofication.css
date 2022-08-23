@@ -21,16 +21,15 @@
 }
 
 #nofication .nofi-container .profiles{
-    justify-content:space-around;
     padding: 10px;
 }
 
 #nofication .nofi-container .profiles .image{
     width: 10%;
-   
 }
 #nofication .nofi-container .profiles img{
     width: 100%;
+    border-radius: 50%;
   
 }
 #nofication .nofi-container .profiles .ten{
@@ -38,18 +37,10 @@
 }
 #nofication .nofi-container .profiles .noidung{
     font-style: italic;
-    margin: auto 0;
+    margin: auto 2px;
 }
 #nofication .nofi-container .profiles .follow{
-   
-}
-.profiles .image{
-    width: 25%;
-    margin-left: 10px;
-}
-.profiles img{
-    width: 100%;
-    border-radius: 50%;
+    margin: auto 0;
 }
 .profiles p{
     color: black
@@ -58,6 +49,10 @@
     margin: 10px 25px;
     background-color: #AB9383;
     border-radius: 10px;
+}
+#nofication .nofi-container .profiles .name{
+    padding: 20px;
+    margin: auto 0;
 }
 
 #nofication .nofi-container .profiles input{
@@ -94,9 +89,6 @@
     border-radius: 5px;
     font-weight: 900;
 }
-#nofication .nofi-container .buttons{
-    margin-right: 100px;
-}
 #nofication .nofi-container .icon-nofi{
     font-size: 30px;
     padding-right: 5px;
@@ -130,10 +122,19 @@
         overflow-y: visible;
         min-height: 700px;
     }
+    #nofication .nofi-container .profiles .image{
+        width: 25%;
+       
+    }
+    #nofication .nofi-container .profiles .name{
+        padding: 0;
+        text-align: center;
+    }
     #nofication .close{
         display: none;
     }
     .open{
         display: flex;
     }
+   
 }
